@@ -1,4 +1,4 @@
-# Stone-Paper-Scissor
+# HandsOnPython-GTBIT
 
 ## This repository has been made for *Hands on Python* event by *Girlscript Faridabad-Gurugram* at Guru Tegh Bahadur Institute of Technology, Rajouri Garden, Delhi. 
 
