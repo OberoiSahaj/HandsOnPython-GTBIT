@@ -1,37 +1,37 @@
 import random
 
-options = ['stone','paper','scissor']
-
-comp = random.choice(options)
+options = ['stone','paper','scissors']
 
 user = None
 
 while user != 'exit':
 
     comp = random.choice(options)
-    user = input('Enter stone, paper or scissor:  ')
+    user = input('Enter Stone, Paper or Scissors:  ')
     user = user.lower()
+
     if user not in options:
-        user = input('Invalid option. Renter: ')
+        user = input('Invalid option. Enter again: ')
 
     if comp == 'stone' and user == 'paper':
-        print('You win')
-        
-    elif comp == 'stone' and user == 'scissor':
-        print('You lose')
+        print('Computer chose Stone, so you Win')        
+    elif comp == 'stone' and user == 'scissors':
+        print('Computer chose Stone, so you Lose')
     elif comp == 'stone' and user == 'stone':
-        print('It is a tie')
+        print('Computer chose Stone, so it is a Tie')
     
+
     if comp == 'paper' and user == 'paper':
-        print('It is a tie')
-    elif comp == 'paper' and user == 'scissor':
-        print('You win')
+        print('Computer chose Paper, so it is a Tie')
+    elif comp == 'paper' and user == 'scissors':
+        print('Computer chose Paper, so you Win')
     elif comp == 'paper' and user == 'stone':
-        print('You lose')
+        print('Computer chose Paper, so you Lose')
     
-    if comp == 'scissor' and user == 'scissor':
-        print('It is a tie')
-    elif comp == 'scissor' and user == 'stone':
-        print('You win')
-    elif comp == 'scissor' and user == 'paper':
-        print('You lose')
+
+    if comp == 'scissors' and user == 'scissors':
+        print('Computer chose Scissors, so it is a Tie')
+    elif comp == 'scissors' and user == 'stone':
+        print('Computer chose Scissors, so you Win')
+    elif comp == 'scissors' and user == 'paper':
+        print('Computer chose Scissors, so you Lose')
