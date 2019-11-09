@@ -9,7 +9,7 @@ while True: # For continuous loop
     user = input('Enter Stone, Paper or Scissors:  ') #Input by user
     user = user.lower()
 
-    if user == 'exit': # If user enters 'exit' then it will come out of loop.
+    if user == 'stop': # If user enters 'stop' then it will come out of loop.
         break
     
     comp = random.choice(options) #Computer chooses it's choice at random
